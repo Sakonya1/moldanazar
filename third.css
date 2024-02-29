@@ -1,0 +1,51 @@
+html{
+	scroll-behavior: smooth;
+}
+.nav-item{
+	padding: 0 15px;
+}
+
+.nav-link{
+	font-size: 1.2rem;
+}
+.navbar-brand{
+	font-family: 'Roboto Slab', serif ;
+	text-align: center;
+}
+.center{
+  margin-top: 5px;
+	font-size: 14px;
+	text-align: center;
+  color: grey;
+}
+.cormorant-garamond-regular-italic {
+    margin-top: 20px;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 18px;
+  }
+
+.text-center {
+    margin-bottom: 20px;
+}
+  
+  .container {
+    margin-top: 40px;
+    max-width: 800px; /* Измените значение по вашему усмотрению */
+  }
+  
+  .aboutimg {
+    justify-content: center;
+    width: 50%; /* Укажите желаемую ширину изображения */
+    height: auto;
+    max-width: 100%; /* Ограничьте максимальную ширину изображения, если это необходимо */
+    display: block; /* Убедитесь, что изображение является блочным элементом */
+    margin: 0 auto; /* Центрируйте изображение по горизонтали */
+  }
+  
+#albom h2{
+    margin-top: 40px;
+	font-size: 40px;
+	text-align: center;
+}

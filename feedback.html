@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moldanazar</title>
+  <link rel="stylesheet" href="styless.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@1,100&family=Roboto+Slab:wght@800&family=Sarabun:wght@300&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/5ea211f3e7.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="images/muz.jpg">
+</head>
+
+<body>
+  <section id="title">
+   <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+     <div class="navbar-brand" href="#"><i class="fa-sharp fa-solid fa-gem"></i>Moldanazar</div>
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+     </button>
+     <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Главная страница</a>
+        </li>
+        <li class="nav-item">
+         <a class="nav-link" href="info.html">Молданазар</a>
+       </li>
+       <li class="nav-item">
+         <a class="nav-link" href="feedback.html">Поиск</a>
+       </li>
+     </ul>
+   </div>
+ </nav>
+</div>
+</section>
+<section id="services">
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container"> 
+      <h1>Музыка как Мост между Культурами</h1>
+      <p>Слушая музыку Молданазара, мы погружаемся в атмосферу казахской культуры, словно становимся путешественниками,<br> преодолевающими языковые границы. Ритмы и мелодии становятся языком, который все понимают, независимо от того,<br> на каком языке они говорят. Это не просто слушание музыки; это взаимодействие с культурой через ноты и слова.</p>
+      <p>Музыка Молданазара как мост олицетворяет единение разнообразных культур, создавая пространство, где каждый слушатель <br> может найти что-то узнаваемое и, в то же время, открывать новые аспекты казахского музыкального наследия. <br> Это не только перевод текстов, но и перевод чувств, эмоций и традиций.</p>
+    </div>
+  </div>
+</section>
+
+
+<div class="search-container">
+  <input type="text" id="searchInput" placeholder="Введите название песни">
+  <button onclick="searchSong()">Найти</button>
+</div>
+
+<script>
+function searchSong() {
+  var input = document.getElementById("searchInput").value.toLowerCase();
+  var url = ""; 
+  
+  if (input === "махаббатым" || input === "mahabbatym") {
+      url = "songs.html";
+  } else if (input === "алыстама" || input === "alystama") {
+      url = "second.html";
+  } else if (input === "акпен бирге" || input === "akpen birge") {
+      url = "third.html";
+  }
+  
+ 
+  if (url !== "") {
+      window.location.href = url;
+  } else {
+      alert("Песня не найдена!"); 
+  }
+}
+</script>
+
+</body>
+</html>

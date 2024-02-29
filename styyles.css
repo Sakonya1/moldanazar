@@ -1,0 +1,50 @@
+html{
+	scroll-behavior: smooth;
+}
+.nav-item{
+	padding: 0 15px;
+}
+
+.nav-link{
+	font-size: 1.2rem;
+}
+.navbar-brand{
+	font-family: 'Roboto Slab', serif ;
+	text-align: center;
+}
+
+#About h2{
+	margin-top: 40px;
+	font-size: 40px;
+	text-align: center;
+}
+
+.cormorant-garamond-regular-italic {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 50px;
+  }
+  
+.about{
+	margin-top: 10px;
+	padding-top: 8%;
+	padding: 3%;
+	background-color:white;
+	color: rgb(6, 6, 6);
+}
+
+#About p{
+	margin-top: 50px;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+}
+
+.aboutimg{
+	width: 100%;
+	height: auto;
+	margin-top: 10px;
+	justify-content: center;
+}
+
+
